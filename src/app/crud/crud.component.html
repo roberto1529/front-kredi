@@ -1,0 +1,30 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">cedula</th>
+        <th scope="col">nombre</th>
+        <th scope="col">valor_credito</th>
+        <th scope="col">plazo</th>
+        <th scope="col">valor_cuota</th>
+        <th scope="col">tasa_interes</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of data; track $index) {
+        <tr>
+          <th scope="row">{{item.id_credito}}</th>
+          <td>{{item.cedula}}</td>
+          <td>{{item.nombre}}</td>
+          <td>{{item.valor_credito}}</td>
+          <td>{{item.plazo}}</td>
+          <td>{{item.valor_cuota}}</td>
+          <td>{{item.tasa_interes}}</td>
+        </tr>
+      }
+
+
+    </tbody>
+  </table>
+</div>
